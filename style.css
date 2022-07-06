@@ -1,0 +1,567 @@
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.K {
+  display: inline-block;
+  transform: rotate(-15deg);
+  color: blue;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 15vh;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid yellow;
+  border-left: none;
+  border-right: none;
+  z-index: 15;
+}
+
+.logo {
+  width: 20vw;
+  height: 100%;
+  background-image: url('/images/IMAGE\ 2022-06-20\ 23:05:50.jpg');
+  background-size: cover;
+  background-position: center;
+  /* margin-left: 10px; */
+}
+
+.nav {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+}
+
+.nav li {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 0 5px 5px;
+  cursor: pointer;
+  border: 1px solid rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.nav li:hover {
+  border-bottom: 1px solid orange;
+  padding-bottom: 4px;
+  margin: 0 0 6px 6px;
+}
+
+.soc {
+  width: 4vh;
+}
+
+.vertikalMenu {
+  position: fixed;
+  margin-top: 15vh;
+  width: 10vw;
+  height: 85vh;
+  background-color: black;
+  border: 1px solid yellow;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+
+main {
+  width: 90vw;
+  height: 100vh;
+  margin-left: 10vw;
+  background-image: url('/images/fon2.jpeg');
+  background-size: cover;
+  text-align: center;
+  color: rgb(102, 97, 75);
+}
+
+.list1 {
+  padding-top: 20vh;
+  /* position: relative; */
+  height: 100%;
+}
+
+.list1 h2, h1, h3 {
+  font-family: 'Libre Baskerville', serif;
+  margin-bottom: 10vh;
+}
+
+.list1 h1 {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue;
+}
+
+.list1 h3 {
+  color: rgb(218, 206, 206);
+  margin-bottom: 13vh;
+}
+
+.list1 button {
+  margin-bottom: 30vh;
+  background-color: rgb(241, 141, 10);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  transition: 1s all;
+  font-size: 15px;
+}
+
+.list1 button:hover {
+  background-color: rgb(241, 233, 10);
+  color: black;
+}
+
+
+/* Содержимое центрального меню */
+
+.uslugi {
+  width: 90vw;
+  /* height: 100vh; */
+  margin-left: 10vw;
+  display: flex;
+  justify-content: center;
+  /* border: 3px solid red; */
+}
+
+.left-blck {
+  background-image: url('/images/porshe.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#left-blck_content {
+  background-color: rgba(0, 0, 0, 0.675);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+
+  width: 90%;
+  height: 90%;
+  padding: 15px;
+  /* border: 3px solid white; */
+}
+
+.left-blck .txt {
+  font-family: 'Barlow', sans-serif;
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+}
+
+.left-blck h2 {
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  font-weight: bold;
+  margin-bottom: 10vh;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.right-block {
+  width: 60%;
+}
+
+.item1, .item2, .item3, .item4 {
+  padding: 10px;
+}
+
+.item1 h3, .item2 h3, .item3 h3, .item4 h3 {
+  margin-bottom: 10px;
+  text-align: center;
+  color: black;
+  font-family: 'Barlow', sans-serif;
+}
+
+.item1, .item3 {
+  background-color: rgb(219, 214, 207);
+}
+
+.content {
+  display: flex;
+  padding-left: 5vh;
+  padding-right: 5vh;
+}
+
+.content-img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.content-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-text {
+  font-size: 1.5 rem;
+  display: flex;
+  align-items: center;
+  font-family: 'Barlow', sans-serif;
+}
+
+.uslugi__video {
+  width: 90vw;
+  margin-left: 10vw;
+  /* height: 85vh; */
+  overflow: hidden;
+  position: relative;
+}
+
+.uslugi__video::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 3; */
+  background-color: rgba(0, 0, 0, 0.484);
+}
+
+.uslugi__video video {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+}
+
+.uslugi__h2 {
+  font-size: 4rem;
+}
+
+.uslugi__h2, .uslugi__p {
+  z-index: 4;
+  display: block;
+  width: 100%;
+  color: white;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.uslugi__p {
+  margin-top: 15vh;
+  font-size: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+.uslugi__menu {
+  z-index: 4;
+  position: absolute;
+  top: 19vh;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.uslugi__menu_item {
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.uslugi__menu_img {
+  width: 50px;
+  height: 100%;
+  margin: auto 0;
+}
+
+.uslugi__menu_img img{
+  width: 50px;
+  position: relative;
+  z-index: 4;
+}
+
+.uslugi__menu_text {
+  color: white;
+  text-align: left;
+  padding-left: 30px;
+  padding-bottom: 7px;
+  z-index: 4;
+  font-family: 'Barlow', sans-serif;
+}
+
+
+/* Авто в наличии */
+.car_sale {
+  width: 90vw;
+  margin-left: 10vw;
+  min-height: 100px;
+  background-color: rgb(205, 215, 239);
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.car_sale h2 {
+  text-align: center;
+  font-family: 'Barlow', sans-serif;
+  color: rgb(242, 138, 41);
+}
+
+/* Слайдер */
+.car_sale_window {
+  /* border: 1px dashed black; */
+  width: 90%;
+  min-height: 40px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  justify-content:space-around;
+}
+
+.car_sale_item {
+  width: 50%;
+}
+
+.item_img {
+  width: 100%;
+  max-height: 428px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* overflow: hidden; */
+}
+
+.item_img img {
+  width: 100%;
+  height: 428px;
+  border-radius: 10px;
+}
+
+.item_info {
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 5;
+  font-size: 0;
+  width: 55px;
+  height: 70px;
+  background: none;
+  border: none;
+  background-size: cover;
+}
+.slick-prev {
+  z-index: 5;
+  left: -40px;
+  background-image: url('/images/back.png');
+  background-repeat: no-repeat;
+  
+}
+
+.slick-next {
+  z-index: 10;
+  right: -26px;
+  background-image: url('/images/next.png');
+  background-repeat: no-repeat;
+}
+
+
+
+
+/* Часто задаваемые вопросы */
+.FAQ {
+  position: relative;
+  width: 90vw;
+  margin-left: 10vw;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("/images/FAQ-fon-3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.FAQ h2 {
+  text-align: center;
+  color: white;
+}
+
+.FAQ p {
+  text-align: center;
+  color: aqua;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.item__p img {
+  margin-right: 20px;
+}
+
+.FAQ_content {
+  width: 90%;
+  margin: 0 auto;
+  /* эксперементирую */
+  overflow: hidden;
+  position: relative;
+}
+
+.FAQ_content__item ul {
+  position: relative;
+}
+
+.FAQ_content__item .item__p {
+  color: rgb(252, 249, 249);
+  text-align: start;
+  font-family: 'Barlow', sans-serif;
+  cursor: pointer;
+}
+
+.li{
+  color: rgb(249, 137, 0);
+  font-family: 'Barlow', sans-serif;
+  border-bottom:  1px dashed white;
+  background-color: rgba(0, 0, 0, 0.485);
+  margin-bottom: 5px;
+  display: block;
+}
+
+.li:last-child {
+  margin-bottom: 40px;
+}
+
+.close  {
+  display: none;
+}
+
+.listing {
+  
+}
+
+/* @keyframes pulse {
+  from {
+    opacity: 1;
+  }
+  50% {
+    transform: rotate(90deg);
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+}
+
+.img {
+  animation-name: pulse;
+  animation-duration: 1s;
+} */
+
+
+
+
+/* Контакти */
+.contact_block {
+  position: relative;
+  width: 90vw;
+  /* height: 85vh; */
+  margin-left: 10vw;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.contact_block::after {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.665);
+}
+
+.contact_block video{
+  width: 100%;
+}
+
+.contact_head {
+  font-family: 'Barlow', sans-serif;
+  color: orangered;
+  z-index: 11;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  /* left: auto;
+  right: auto; */
+  top: 5vh;
+  font-size: 3rem;
+  border-bottom: 1px solid white;
+}
+
+.contact_block ul {
+  font-family: 'Barlow', sans-serif;
+  color: orangered;
+  z-index: 11;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+  top: 15vh;
+  font-size: 2rem;
+  /* display: block;
+  left: 50px; */
+}
+
+.contact_block li {
+  margin-left: 30px;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+}
+
+.contact_span {
+  color: white;
+}
+
+.contact_block li:last-child {
+  text-align: center;
+  padding-right: 40px;
+}
+
+#maper {
+  width: 70%;
+  height: 18rem;
+  border-radius: 10px;
+}
