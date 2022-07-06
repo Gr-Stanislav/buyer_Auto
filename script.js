@@ -76,11 +76,11 @@ Item_FAQ.forEach((item, i) => {
         if (!ItemText[i].classList.contains('close')){
             ImgFAQ[i].style.transition = '0.5s';
             ImgFAQ[i].style.transform = 'rotate(180deg)';
-            ImgFAQ[i].src = "../images/minus.png";
+            ImgFAQ[i].src = "./images/minus.png";
         } else {
             ImgFAQ[i].style.transition = '0.5s';
             ImgFAQ[i].style.transform = 'rotate(90deg)';
-            ImgFAQ[i].src = "../images/plus.png";
+            ImgFAQ[i].src = "./images/plus.png";
         }
 
 
