@@ -27,7 +27,7 @@ header {
 
 .logo {
   width: 20vw;
-  background-image: url('../images/IMAGE\ 2022-06-20\ 23:05:50.jpg');
+  background-image: url('./images/IMAGE\ 2022-06-20\ 23:05:50.jpg');
   background-size: cover;
   background-position: center;
   /* margin-left: 10px; */
