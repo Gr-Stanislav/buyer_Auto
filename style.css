@@ -28,7 +28,7 @@ header {
 .logo {
   width: 20vw;
   height: 100%;
-  background-image: url('/images/IMAGE\ 2022-06-20\ 23:05:50.jpg');
+  background-image: url('./images/IMAGE\ 2022-06-20\ 23:05:50.jpg');
   background-size: cover;
   background-position: center;
   /* margin-left: 10px; */
@@ -81,7 +81,7 @@ main {
   width: 90vw;
   height: 100vh;
   margin-left: 10vw;
-  background-image: url('/images/fon2.jpeg');
+  background-image: url('./images/fon2.jpeg');
   background-size: cover;
   text-align: center;
   color: rgb(102, 97, 75);
@@ -136,7 +136,7 @@ main {
 }
 
 .left-blck {
-  background-image: url('/images/porshe.jpeg');
+  background-image: url('./images/porshe.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -383,7 +383,7 @@ main {
 .slick-prev {
   z-index: 5;
   left: -40px;
-  background-image: url('/images/back.png');
+  background-image: url('./images/back.png');
   background-repeat: no-repeat;
   
 }
@@ -391,7 +391,7 @@ main {
 .slick-next {
   z-index: 10;
   right: -26px;
-  background-image: url('/images/next.png');
+  background-image: url('./images/next.png');
   background-repeat: no-repeat;
 }
 
@@ -405,7 +405,7 @@ main {
   margin-left: 10vw;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("/images/FAQ-fon-3.jpeg");
+  background-image: url("./images/FAQ-fon-3.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
