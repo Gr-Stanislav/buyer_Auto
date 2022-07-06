@@ -463,28 +463,6 @@ main {
   display: none;
 }
 
-.listing {
-  
-}
-
-/* @keyframes pulse {
-  from {
-    opacity: 1;
-  }
-  50% {
-    transform: rotate(90deg);
-    opacity: 0.1;
-  }
-  to {
-    opacity: 1;
-    transform: rotate(180deg);
-  }
-}
-
-.img {
-  animation-name: pulse;
-  animation-duration: 1s;
-} */
 
 
 
@@ -561,6 +539,6 @@ main {
 
 #maper {
   width: 70%;
-  height: 18rem;
+  height: 19rem;
   border-radius: 10px;
 }
