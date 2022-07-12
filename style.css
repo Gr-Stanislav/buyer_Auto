@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .K {
   display: inline-block;
   transform: rotate(-15deg);
@@ -127,7 +131,7 @@ main {
 
 .uslugi {
   width: 90vw;
-  /* height: 100vh; */
+  min-height: 70vh;
   margin-left: 10vw;
   display: flex;
   justify-content: center;
@@ -185,6 +189,7 @@ main {
 
 .item1, .item2, .item3, .item4 {
   padding: 10px;
+  height: 33.3%;
 }
 
 .item1 h3, .item2 h3, .item3 h3, .item4 h3 {
@@ -240,6 +245,38 @@ main {
   height: 100%;
   /* z-index: 3; */
   background-color: rgba(0, 0, 0, 0.484);
+}
+
+/* Акредитация -------- */
+.akreditation {
+  width: 90vw;
+  margin-left: 10vw;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content:center;
+}
+
+.akreditation_text {
+  display: flex;
+  align-items: center;
+}
+
+.akreditation_text p {
+  color: blue;
+  font-size: 1.5rem;
+  font-family: 'Barlow', sans-serif;
+}
+
+.akreditation_auction {
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.akreditation_auction img {
+  margin-right: 20px;
+  max-width: 7rem;
 }
 
 .uslugi__video video {
@@ -312,6 +349,10 @@ main {
   font-family: 'Barlow', sans-serif;
 }
 
+.txt span {
+  margin-top: 20px;
+  display: inline-block;
+}
 
 /* Авто в наличии */
 .car_sale {
@@ -468,6 +509,11 @@ main {
 
 
 /* Контакти */
+.phone {
+  text-decoration: none;
+  color: orangered;
+}
+
 .contact_block {
   position: relative;
   width: 90vw;
