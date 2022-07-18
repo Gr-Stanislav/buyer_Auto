@@ -37,7 +37,41 @@ header {
   /* margin-left: 10px; */
 }
 
-.nav {
+.location_num ul {
+  /* border: 2px solid red; */
+}
+
+.location_num li {
+  width: 250px;
+}
+
+.location_num img {
+  position: relative;
+  top: 2px;
+}
+
+.location_num li {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.location_num a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, sans-serif;
+  transition: 0.5s all;
+}
+
+.location_num a:hover {
+  font-size: 1.1rem;
+  color: aquamarine;
+}
+
+.location_num_img {
+  width: 1.2rem;
+}
+
+.nav, .location_num {
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -78,11 +112,21 @@ header {
   border-left: none;
   border-top: none;
   border-bottom: none;
+  display: flex;
+  align-items: center;
+}
+
+.vertikalMenu p {
+  color: white;
+  transform: rotate(-90deg);
+  width: 80%;
+  font-size: 1rem;
 }
 
 main {
   width: 90vw;
   height: 100vh;
+  max-height: 700px;
   margin-left: 10vw;
   background-image: url('./images/fon2.jpeg');
   background-size: cover;
@@ -200,7 +244,7 @@ main {
 }
 
 .item1, .item3 {
-  background-color: rgb(219, 214, 207);
+  background-color: rgb(246 218 179);
 }
 
 .content {
@@ -263,13 +307,18 @@ main {
 }
 
 .akreditation_text p {
-  color: blue;
+  background: #1b72e8;
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
   font-size: 1.5rem;
+  color: white;
   font-family: 'Barlow', sans-serif;
 }
 
 .akreditation_auction {
-  margin-left: 4rem;
+  margin-left: 40px;
   display: flex;
   align-items: center;
 }
@@ -488,15 +537,22 @@ main {
 }
 
 .li{
-  color: rgb(249, 137, 0);
+  color: rgb(245, 236, 225);
   font-family: 'Barlow', sans-serif;
-  border-bottom:  1px dashed white;
-  background-color: rgba(0, 0, 0, 0.485);
+  /* border-bottom:  1px dashed white; */
+  /* background-color: rgba(0, 0, 0, 0.485); */
   margin-bottom: 5px;
   display: block;
 }
 
-.li:last-child {
+.listing {
+  /* background-color: rgba(0, 0, 0, 0.485); */
+  background-color: rgba(122, 17, 234, 0.485);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.listing:last-child {
   margin-bottom: 40px;
 }
 
@@ -571,7 +627,7 @@ main {
   text-decoration: none;
   list-style: none;
   padding: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 .contact_span {
