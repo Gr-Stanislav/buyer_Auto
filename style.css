@@ -59,7 +59,7 @@ header {
   text-decoration: none;
   color: white;
   font-family: Arial, sans-serif;
-  transition: 0.5s all;
+  transition: 0.3s all;
 }
 
 .location_num a:hover {
@@ -78,8 +78,8 @@ header {
 
 .nav li a {
   text-decoration: none;
-  color: white;
-  font-family: 'Barlow', sans-serif;
+  color: rgb(246, 240, 240);
+  font-family: 'Roboto Slab', serif;
 }
 
 .nav li {
@@ -126,12 +126,25 @@ header {
 main {
   width: 90vw;
   height: 100vh;
-  max-height: 700px;
+  min-height: 700px;
   margin-left: 10vw;
   background-image: url('./images/fon2.jpeg');
   background-size: cover;
   text-align: center;
   color: rgb(102, 97, 75);
+  position: relative;
+  /* Тест*/
+  /* clip-path: polygon(0 0, 0 90%, 50% 100%, 100% 90%, 100% 0); */
+}
+
+.bottom_fon {
+  position: absolute;
+  background-color: rgba(1, 1, 1, 0.548);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0, 50% 100%);
 }
 
 .list1 {
@@ -225,6 +238,7 @@ main {
   margin-bottom: 10vh;
   text-align: center;
   font-size: 3rem;
+  text-shadow: 5px 3px 5px rgba(255, 255, 255, 0.351);
 }
 
 .right-block {
@@ -245,6 +259,7 @@ main {
 
 .item1, .item3 {
   background-color: rgb(246 218 179);
+  transition: 0.3s all;
 }
 
 .content {
@@ -268,7 +283,8 @@ main {
   font-size: 1.5 rem;
   display: flex;
   align-items: center;
-  font-family: 'Barlow', sans-serif;
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Roboto Slab', serif;
 }
 
 .uslugi__video {
@@ -299,6 +315,7 @@ main {
   padding-bottom: 15px;
   display: flex;
   justify-content:center;
+  background-color: #f5faff;
 }
 
 .akreditation_text {
@@ -398,6 +415,12 @@ main {
   font-family: 'Barlow', sans-serif;
 }
 
+.uslugi__menu_text p {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
 .txt span {
   margin-top: 20px;
   display: inline-block;
@@ -408,15 +431,16 @@ main {
   width: 90vw;
   margin-left: 10vw;
   min-height: 100px;
-  background-color: rgb(205, 215, 239);
+  /* background-color: rgb(227 123 11); */
   padding-top: 10px;
   padding-bottom: 30px;
+  background-image: url("./images/fon_auto_sale2.jpeg");
 }
 
 .car_sale h2 {
   text-align: center;
   font-family: 'Barlow', sans-serif;
-  color: rgb(242, 138, 41);
+  color: rgb(36 32 29);
 }
 
 /* Слайдер */
@@ -432,20 +456,28 @@ main {
 
 .car_sale_item {
   width: 50%;
+  /* border-radius: 10px; */
 }
 
 .item_img {
   width: 100%;
-  max-height: 428px;
+  max-height: 415px;
   padding-left: 20px;
   padding-right: 20px;
+  /* Возможно удалить */
   /* overflow: hidden; */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .item_img img {
   width: 100%;
-  height: 428px;
+  height: 415px;
   border-radius: 10px;
+  object-fit: cover;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.621), 0 6px 20px 0 rgba(0, 0, 0, 0.538);
 }
 
 .item_info {
@@ -532,7 +564,8 @@ main {
 .FAQ_content__item .item__p {
   color: rgb(252, 249, 249);
   text-align: start;
-  font-family: 'Barlow', sans-serif;
+  /* font-family: 'Barlow', sans-serif; */
+  font-family: 'Roboto Slab', serif;
   cursor: pointer;
 }
 
@@ -543,13 +576,17 @@ main {
   /* background-color: rgba(0, 0, 0, 0.485); */
   margin-bottom: 5px;
   display: block;
+  /* position: absolute; */
 }
 
 .listing {
-  /* background-color: rgba(0, 0, 0, 0.485); */
   background-color: rgba(122, 17, 234, 0.485);
   padding: 15px;
   border-radius: 15px;
+  /* opacity: 1; */
+  display: block;
+  transition: 0.3s all;
+  transform: translateX(0%);
 }
 
 .listing:last-child {
@@ -557,7 +594,9 @@ main {
 }
 
 .close  {
+  /* transform: translateY(-150%); */
   display: none;
+  opacity: 0;
 }
 
 
